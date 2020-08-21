@@ -40,7 +40,7 @@ nav a:hover {
 /* FOOTER */
 
 footer {
-	background: url("bg.jpg");
+	background: url("../images/bg.jpg");
 	text-align: center;
 	box-sizing: border-box;
 	padding: 20px 0;
