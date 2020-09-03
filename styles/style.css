@@ -1,3 +1,7 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
 
 /* Configurar o main */
 
@@ -53,14 +57,13 @@
 }
 
 main {
-	width: 940px;
-	margin: 0 auto;
+
 }
 form {
 	margin: 40px 0;
 }
 
-form label,  form p {
+form label,  form legend {
 	display: block;
 	font-size: 20px;
 	margin: 0 0 10px;
@@ -76,4 +79,157 @@ form label,  form p {
 
 .checkbox {
 	margin: 20px 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	transition: 0.5s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.1);
+}
+
+table {
+	margin: 20px 0 40px;
+	position: absolute;
+	top: 350px;
+	right: 10%;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+
+}
+
+td,
+th {
+	border: 1px solid #000;
+	padding: 8px 15px; 
+	font-size: 20px;
+}
+
+/* CSS da página inicial*/
+.banner {
+	width: 100%;
+}
+
+.tituloPrincipal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+.principal {
+	padding: 3em 0;  
+	background: #fefefe;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#fefefe, #888888) ;
+}
+
+.mapaConteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+}
+
+.conteudoBeneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.listaBeneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5em;
+}
+
+.itens:nth-child(1) {
+	font-weight: bold;
+}
+
+.itens:before {
+	content: '🟊';
+}
+
+.imagemBeneficios {
+	width: 60%;
+	opacity: 1;
+	transition: 0.5s;
+	box-shadow: 10px 10px 10px #000
+}
+
+.imagemBeneficios:hover {
+	opacity: 0.5;
+}
+
+.video {
+	width: 500px;
+	margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+	.boxTop, .principal, .conteudoBeneficios, .mapaConteudo, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.listaBeneficios, .imagemBeneficios {
+		width: 100%;
+	}
 }
